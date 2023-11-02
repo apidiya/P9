@@ -1,20 +1,19 @@
+@keyframes rotateFlower {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 // section story
 .story__article::after,
 .story h2::after {
-    animation: rotateFlower 5s linear infinite; /* 5s est la durée de l'animation, vous pouvez ajuster selon vos besoins */
-
-    @keyframes rotateFlower {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
+    animation: rotateFlower 5s linear infinite; 
 }
 
 // Section Studio
-
 #studio {
 
 	h2 {
@@ -36,4 +35,17 @@
 // Section Oscar
 .oscar::before, .oscar::after {
     animation: rotateFlower 5s linear infinite;
+}
+
+// Section Footer 
+.site-footer {
+	&::before, &::after {
+			content: "";
+	}
+}
+
+.site-footer ul::after,
+.site-footer::before,
+.site-footer::after {
+	animation: rotateFlower 5s linear infinite;
 }
