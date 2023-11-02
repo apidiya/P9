@@ -1,10 +1,33 @@
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
     transition: opacity 2s ease, transform 2s ease;
 }
 
 .fade-in.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.fade-in-video{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade-in-video.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flottement {
+    animation: flotte 8s infinite both;
+}
+
+@keyframes flotte {
+    0% { transform: translate(0, 0); }
+    33% { transform: translate(20px, 33px); }
+    50% { transform: translate(0, 0); }
+    66% { transform: translate(34px, -34px); }
+    80% { transform: translate(-5px, -5px); }
 }

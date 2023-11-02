@@ -1,3 +1,6 @@
+$vitesse:15s;
+$hauteur:200;
+
 @keyframes rotateFlower {
 	from {
 		transform: rotate(0deg);
@@ -10,15 +13,18 @@
 // section story
 .story__article::after,
 .story h2::after {
-    animation: rotateFlower 5s linear infinite; 
+    animation: rotateFlower $vitesse linear infinite; 
 }
 
+.story h2::after {
+    transform-origin: 77px 77px;
+}
 // Section Studio
 #studio {
 
 	h2 {
 		&::before, &::after {
-			animation: rotateFlower 5s linear infinite;
+			animation: rotateFlower $vitesse linear infinite;
 		}
 		
 		&::before {
@@ -35,5 +41,5 @@
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after {
-	animation: rotateFlower 5s linear infinite;
+	animation: rotateFlower $vitesse linear infinite;
 }

@@ -4,8 +4,11 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-        <section class="banner section fade-in">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+        <section class="banner section fade-in fade-in-video ">
+            <div class="parralax">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>  " class="flottement" alt="logo Fleurs d'oranger & chats errants">
+            </div>
+            
         </section>
         <section id="#story" class="story section fade-in">
             <h2>L'histoire</h2>
