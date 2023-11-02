@@ -31,19 +31,7 @@
 	}
 }
 
-
-// Section Oscar
-.oscar::before, .oscar::after {
-    animation: rotateFlower 5s linear infinite;
-}
-
-// Section Footer 
-.site-footer {
-	&::before, &::after {
-			content: "";
-	}
-}
-
+//Section Footer 
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after {

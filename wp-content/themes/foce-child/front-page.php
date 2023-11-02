@@ -67,10 +67,10 @@ get_header();
             </section>
 
     
-        <!---- ajout template nomination Oscar -->
-        <?php get_template_part('template-parts/oscar'); ?>
-        <!---- fin ajout template nomination Oscar --->
+        
     </main><!-- #main -->
+    <!---- ajout template nomination Oscar -->
+    <?php get_template_part('template-parts/oscar'); ?>
 
 <?php
 get_footer();
