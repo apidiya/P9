@@ -4,10 +4,10 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-        <section class="banner wow" data-wow-duration="1s" data-wow-delay="0.5s">
+        <section class="banner section fade-in">
             <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
-        <section id="#story" class="story">
+        <section id="#story" class="story section fade-in">
             <h2>L'histoire</h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
@@ -22,7 +22,7 @@ get_header();
             );
             $characters_query = new WP_Query($args);
             ?>
-            <article id="characters">
+            <article id="characters" class="section fade-in">
                 <div class="main-character">
                     <h3>Les personnages</h3>
                     <?php
@@ -34,7 +34,7 @@ get_header();
                     $characters_query->next_post();
                     ?>
                 </div>
-                <div class="other-characters">
+                <div class="other-characters section fade-in">
                     <?php
                     while ( $characters_query->have_posts() ) {
                         $characters_query->the_post();
@@ -48,7 +48,7 @@ get_header();
                     ?>
                 </div>
             </article>
-            <article id="place" class="wow" data-wow-duration="1s" data-wow-delay="0.5s">
+            <article id="place" class="section fade-in">
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
@@ -58,7 +58,7 @@ get_header();
         </section>
 
 
-        <section id="studio" class="wow" data-wow-duration="1s" data-wow-delay="0.5s">
+        <section id="studio" class="section fade-in">
             <h2>Studio Koukaki</h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>
@@ -69,8 +69,12 @@ get_header();
     
         
     </main><!-- #main -->
+    
     <!---- ajout template nomination Oscar -->
+    <section class="fade-in">
     <?php get_template_part('template-parts/oscar'); ?>
+    </section>
+
 
 <?php
 get_footer();

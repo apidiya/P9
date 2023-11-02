@@ -18,8 +18,14 @@ if ( get_stylesheet() !== get_template() ) {
     } );
 }
 
-// Chargement de wow.js
-wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'), '1.3.0', true);
+// // Chargement de wow.js
+// wp_enqueue_script('wow', get_template_directory_uri() . "-child/assets/js/wow.js", array('jquery'), '1.3.0', true);
 
-// Chargement du fichier d'initialisation de wow.js
-wp_enqueue_script('wow-init', get_template_directory_uri() . '/assets/js/wow-init.js', array('jquery', 'wow'), '1.0.0', true);
+// // Chargement du fichier d'initialisation de wow.js
+// wp_enqueue_script('wow-init', get_template_directory_uri() . "-child/assets/js/wow-init.js", array('jquery', 'wow'), '1.0.0', true);
+
+// fade in script
+function custom_fade_in_script() {
+    wp_enqueue_script('custom-fade-in', get_template_directory_uri() . "-child/assets/js/custom-fade-in.js", array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'custom_fade_in_script');
