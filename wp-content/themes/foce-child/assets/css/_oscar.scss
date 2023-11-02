@@ -15,19 +15,21 @@
   height: 280px;
   width: 723px;
   color: #FFF5E9;
+  margin-left: 70px;
+  padding-top: 20px;
 }
 
 .nomination_text_container {
-  background-size: cover;
   background-image: url("../../assets/images/orange_oscar_bg.png");
   background-repeat: no-repeat;
   margin-top: 6px; 
-  margin-left: 1px; 
+  margin-left: 50px; 
 }
 
 
 .nominationOscar {
   width: 25%;
+  padding-bottom: 100px;
 }
 
 .oscar::before, .oscar::after {
