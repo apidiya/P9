@@ -5,7 +5,7 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
     // Chargement du style.css du théme enfant
-    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/asset/css/style.css', array(), filemtime(get_stylesheet_directory() . '/asset/css/style.css'));
+    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/style.css'));
 }
 // Get customizer options form parent theme
 if ( get_stylesheet() !== get_template() ) {
@@ -17,3 +17,9 @@ if ( get_stylesheet() !== get_template() ) {
         return get_option( 'theme_mods_' . get_template(), $default );
     } );
 }
+
+// Chargement de wow.js
+wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'), '1.3.0', true);
+
+// Chargement du fichier d'initialisation de wow.js
+wp_enqueue_script('wow-init', get_template_directory_uri() . '/assets/js/wow-init.js', array('jquery', 'wow'), '1.0.0', true);

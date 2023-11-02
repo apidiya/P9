@@ -1,0 +1,39 @@
+// section story
+.story__article::after,
+.story h2::after {
+    animation: rotateFlower 5s linear infinite; /* 5s est la durée de l'animation, vous pouvez ajuster selon vos besoins */
+
+    @keyframes rotateFlower {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+// Section Studio
+
+#studio {
+
+	h2 {
+		&::before, &::after {
+			animation: rotateFlower 5s linear infinite;
+		}
+		
+		&::before {
+			transform-origin: 101.5px 99.5px;
+		}
+		
+		&::after {
+			transform-origin: 54px 53px;
+		}
+	}
+}
+
+
+// Section Oscar
+.oscar::before, .oscar::after {
+    animation: rotateFlower 5s linear infinite;
+}
