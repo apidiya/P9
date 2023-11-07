@@ -1,0 +1,57 @@
+.banner img {
+	margin-top: unset;
+}
+
+.banner {
+    background-image: none;  // désactive l'image qui est appelée dans la classe banner du thème parent
+
+    .backgroundBanner {
+        position: absolute;
+        width: 100% !important;
+        z-index: -2;
+        margin-top: 0px !important;
+    }
+
+    .logoBanner {
+        width: 75%;
+        z-index: 1;
+        position: relative;
+        top: 120px;
+        margin-left: 120px;
+    }
+    
+    .videoBanner {
+        position: absolute;
+        width: 100% !important;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+
+       .videoBanner {
+            width: 120% !important;
+        }
+ }
+
+@media (max-width: 700px) {
+
+    .banner {
+
+        .videoBanner {
+            display:none;
+        }
+
+        .parallaxe {
+            left: 0px;
+        }
+        
+        .logoBanner {
+            position:absolute;
+            top: 50px; 
+            left: 100px;
+            width: 80% !important;
+            z-index: -1;
+        }  
+    }
+}
