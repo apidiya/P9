@@ -1,6 +1,4 @@
-﻿
-//console.log(" Message console pour vérifier que le JavaScript est fonctionnel ")
-console.log("le script Swiper est lancé")
+﻿console.log("le script Swiper est lancé")
 
 // Initialisation du Swiper
 const swiper = new Swiper(".swiper", {
@@ -9,11 +7,12 @@ const swiper = new Swiper(".swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     direction:'horizontal',
+	loop: true,
 
 		coverflowEffect: {
-		    rotate: 10,
+		    rotate: 40,
 		    stretch: 0,
-		    depth: 50,
+		    depth: 100,
 		    modifier: 1,
 		    slideShadows: false,
 		},

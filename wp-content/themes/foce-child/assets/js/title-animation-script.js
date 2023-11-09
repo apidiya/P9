@@ -1,7 +1,4 @@
-
-//console.log(" Message dans la console, pour vérifier que le JavaScript est fonctionnel ")
 console.log(" le script title-animation-script.js est lancé ")
-
 
    const observer = new IntersectionObserver(entries => {
     // Loop over the entries

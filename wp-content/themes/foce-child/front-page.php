@@ -25,6 +25,9 @@ get_header();
                         <?php echo get_template_part('template-parts/swiper'); ?>
 			</article>
             <article id="place" class="section fade-in">
+                <img id="NuagesBleu" src=<?php echo get_stylesheet_directory_uri() . '/assets/images/nuages-bleu.png'; ?> alt="Nuages Bleu"
+                    data-0="transform:translateX(0px);" 
+                    data-3000="transform:translateX(-300px);">
                 <div>
                 <h3><span class="Animetitre">Le</span><span class="Animetitre2">&nbsp;lieu</span></h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
@@ -47,7 +50,7 @@ get_header();
     </main><!-- #main -->
     
     <!---- ajout template nomination Oscar -->
-    <section class="fade-in">
+    <section id="oscar" class="fade-in">
     <?php get_template_part('template-parts/oscar'); ?>
     </section>
 

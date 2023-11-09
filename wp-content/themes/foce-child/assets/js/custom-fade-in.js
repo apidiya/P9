@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     function checkVisibility() {
-        var elements = document.querySelectorAll('.fade-in');
-        var windowHeight = window.innerHeight;
+        const elements = document.querySelectorAll('.fade-in');
+        const windowHeight = window.innerHeight;
 
         elements.forEach(function(element) {
-            var elementTop = element.getBoundingClientRect().top;
+            const elementTop = element.getBoundingClientRect().top;
 
             if (elementTop < windowHeight) {
                 element.classList.add('active');
@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // parrralaxe
 window.addEventListener('scroll', function() {
-    var parallaxImage = document.querySelector('.parralax');
-    var scrollPosition = window.scrollY;
+    const parallaxImage = document.querySelector('.parralax');
+    const scrollPosition = window.scrollY;
 
     // Ajustez la valeur 0.5 selon l'effet de parallaxe souhaité.
     // Une valeur plus élevée accélérera l'effet de parallaxe, une valeur plus faible le ralentira.
-    var parallaxValue = scrollPosition * 0.3;
+    const parallaxValue = scrollPosition * 0.3;
 
     parallaxImage.style.transform = 'translateY(' + parallaxValue + 'px)';
 });
