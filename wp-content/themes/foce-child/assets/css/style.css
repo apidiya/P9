@@ -233,7 +233,6 @@
   animation: KframeAnimateTitre2 1s ease-in-out;
 }
 
-/* Keyframes animation des titres */
 @keyframes KframeAnimateTitre1 {
   0% {
     transform: translateY(100%);
