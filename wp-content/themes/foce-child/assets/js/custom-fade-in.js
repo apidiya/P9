@@ -29,4 +29,3 @@ window.addEventListener('scroll', function() {
 
     parallaxImage.style.transform = 'translateY(' + parallaxValue + 'px)';
 });
-

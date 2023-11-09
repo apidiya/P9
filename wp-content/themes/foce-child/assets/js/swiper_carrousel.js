@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
     direction:'horizontal',
 
 		coverflowEffect: {
-		    rotate: 66,
+		    rotate: 10,
 		    stretch: 0,
 		    depth: 50,
 		    modifier: 1,
