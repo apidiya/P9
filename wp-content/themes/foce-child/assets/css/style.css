@@ -88,14 +88,12 @@
 
 #oscar::before {
   background-image: url("../../assets/images/Sunflower.png");
-  left: -144px;
-  top: -96px;
 }
 
 #oscar::after {
   background-image: url("../../assets/images/orchid.png");
-  right: -210px;
-  top: -128px;
+  right: -70px;
+  top: -40px;
 }
 
 @keyframes rotateFlower {
@@ -125,10 +123,19 @@
   transform-origin: 54px 53px;
 }
 
+#oscar::before, #oscar::after {
+  animation: rotateFlower 15s linear infinite;
+}
+
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after {
   animation: rotateFlower 15s linear infinite;
+}
+
+.site-footer::after,
+.site-footer::before {
+  display: none;
 }
 
 .fade-in {

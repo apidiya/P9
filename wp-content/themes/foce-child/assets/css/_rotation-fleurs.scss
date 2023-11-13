@@ -37,9 +37,22 @@ $hauteur:200;
 	}
 }
 
-//Section Footer 
+// Section Oscar
+#oscar {
+	&::before, &::after {
+		animation: rotateFlower $vitesse linear infinite;
+	}
+}
+
+// Section Footer 
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after {
 	animation: rotateFlower $vitesse linear infinite;
+}
+
+// Cacher les 2 fleurs colophon du footer
+.site-footer::after,
+.site-footer::before {
+	display: none;
 }
