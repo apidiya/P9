@@ -15,7 +15,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>  " class="flottement" alt="logo Fleurs d'oranger & chats errants">
             </div>  
         </section>
-        <section id="#story" class="story section fade-in">
+        <section id="story" class="story section fade-in">
         <h2><span class="Animetitre">L'</span><span class="Animetitre2">histoire</span></h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>

@@ -23,9 +23,8 @@ window.addEventListener('scroll', function() {
     const parallaxImage = document.querySelector('.parralax');
     const scrollPosition = window.scrollY;
 
-    // Ajustez la valeur 0.5 selon l'effet de parallaxe souhaité.
+    // Ajustez la valeur 0.25 selon l'effet de parallaxe souhaité.
     // Une valeur plus élevée accélérera l'effet de parallaxe, une valeur plus faible le ralentira.
-    const parallaxValue = scrollPosition * 0.3;
-
+    const parallaxValue = scrollPosition * 0.25;
     parallaxImage.style.transform = 'translateY(' + parallaxValue + 'px)';
 });

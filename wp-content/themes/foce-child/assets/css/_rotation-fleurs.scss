@@ -56,3 +56,14 @@ $hauteur:200;
 .site-footer::before {
 	display: none;
 }
+
+// Rotation des fleurs du menu
+
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuRandom,
+#fleurMenuFlower,
+#fleurMenuHibiscus {
+	animation: rotateFlower $vitesse linear infinite ;
+  }
+

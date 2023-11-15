@@ -27,18 +27,36 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <ul>
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
-            </ul>
+                    <div class="boutonMenu">
+						<span> </span>
+	         </div>
+	         <ul>
+		       	<li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+	         </ul>
+	    </nav><!-- #site-navigation -->
 
-		</nav><!-- #site-navigation -->
+        <section class="menu-items MenuFull">
+        	<div class="menu-items__container">
+
+          		<img class="logoMenu"         src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-en-paralax.png'; ?>" alt="logo menu en parallaxe">		      
+  	
+          		<img id="catMenuBleu"         src="<?php echo get_stylesheet_directory_uri() . '/assets/images/bluecat.png'; ?>" alt="Chat violet">
+			    <img id="catMenuBlack"        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/blackcat.png'; ?>" alt="Chat noir">
+			    <img id="catMenuOrange"       src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orangecat.png'; ?>" alt="Chat orange">
+			    <img id="fleurMenuSunFlower"  src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Sunflower.png'; ?>" alt="Fleur blanche">
+			    <img id="fleurMenuOrchid"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orchid.png'; ?>" alt="Orchidée violette">
+			    <img id="fleurMenuHibiscus"   src="<?php echo get_stylesheet_directory_uri() . '/assets/images/hibiscus_footer.png'; ?>" alt="Hibiscus">
+			    <img id="fleurMenuRandom"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/random_flower.png'; ?>" alt="Petite fleur violette">
+			    <img id="fleurMenuFlower"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/flower.png'; ?>" alt="Petite fleur orange">
+
+			    <ul class="liste">
+					<li><a href="#story"><span class="Animetitre2">Histoire</span></a></li>
+					<li><a href="#characters"><span class="Animetitre2">Personnages</span></a></li>
+					<li><a href="#place"><span class="Animetitre2">Lieu</span></a></li>
+					<li><a href="#studio"><span class="Animetitre2">Studio Koukaki</span></a></li>
+			    </ul>
+				<p class="menuParagraphe">STUDIO KOUKAKI</p>
+			</div>
+		</section>
+
 	</header><!-- #masthead -->

@@ -12,8 +12,7 @@
     filter: blur(10px);
     position: absolute;
     top: 0;
-    right: 0; /* Position de départ des nuages */
+    right: 150px; /* Position de départ des nuages */
     height: auto;
-    /* Vous pouvez ajouter une transition si vous voulez un effet de déplacement doux avec JavaScript */
     transition: transform 0.5s ease-out;
   }

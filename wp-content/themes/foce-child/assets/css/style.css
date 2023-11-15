@@ -1,4 +1,191 @@
 @charset "UTF-8";
+/* CSS pour le menu burger */
+.main-navigation a {
+  margin-left: 250px;
+}
+
+.MenuFull {
+  background-color: #FFF5E9;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+}
+.MenuFull.nav_open {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutonMenu {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+.boutonMenu span {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.boutonMenu span::before, .boutonMenu span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.boutonMenu span::after {
+  transform: translateY(10px);
+}
+.boutonMenu span::before {
+  transform: translateY(-10px);
+}
+.boutonMenu.active span {
+  background-color: transparent;
+}
+.boutonMenu.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.boutonMenu.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.menu-items {
+  display: none;
+  background-color: #FFF5E9;
+}
+.menu-items__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 70px;
+}
+
+.liste ul {
+  text-align: center;
+  height: 57%;
+  margin: 0;
+  padding: 0;
+}
+.liste li {
+  text-align: center;
+  list-style-type: none;
+}
+.liste li a {
+  text-decoration: none !important;
+  list-style-type: none !important;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 104px;
+}
+.liste li a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00);
+  -webkit-filter: drop;
+}
+.liste img {
+  margin: auto;
+  display: flex;
+}
+
+.menuParagraphe {
+  margin-left: 80px;
+  text-align: center;
+  padding-top: 100px !important;
+}
+
+#catMenuBleu,
+#catMenuBlack,
+#catMenuOrange,
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuHibiscus,
+#fleurMenuRandom,
+#fleurMenuFlower {
+  position: absolute;
+}
+
+.logoMenu {
+  width: 200px;
+}
+
+#catMenuBleu {
+  top: 260px;
+  left: 280px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuBlack {
+  top: 480px;
+  right: 210px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuOrange {
+  bottom: 240px;
+  left: 80px;
+  width: 93px;
+  height: 84px;
+}
+
+#fleurMenuSunFlower {
+  top: 215px;
+  right: 210px;
+}
+
+#fleurMenuOrchid {
+  top: 117px;
+  left: -54px;
+}
+
+#fleurMenuHibiscus {
+  bottom: -120px;
+  right: -240px;
+  width: 30%;
+}
+
+#fleurMenuRandom {
+  top: 400px;
+  right: -80px;
+  width: 5%;
+}
+
+#fleurMenuFlower {
+  bottom: 480px;
+  left: 230px;
+  width: 80px;
+  height: 80px;
+}
+
+#catMenuBlack,
+#catMenuOrange,
+#catMenuBleu {
+  animation: flotte 8s infinite alternate;
+}
+
+@media (max-width: 1100px) {
+  #catMenuBlack, #fleurMenuFlower, #fleurMenuHibiscus, #fleurMenuSunFlower {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  #catMenuBleu, #catMenuOrange, #fleurMenuOrchid, #fleurMenuRandom {
+    display: none;
+  }
+}
 .banner img {
   margin-top: unset;
 }
@@ -93,7 +280,7 @@
 #oscar::after {
   background-image: url("../../assets/images/orchid.png");
   right: -70px;
-  top: -40px;
+  top: -70px;
 }
 
 @keyframes rotateFlower {
@@ -138,6 +325,14 @@
   display: none;
 }
 
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuRandom,
+#fleurMenuFlower,
+#fleurMenuHibiscus {
+  animation: rotateFlower 15s linear infinite;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(100px);
@@ -175,10 +370,7 @@
     transform: translate(0, 0);
   }
   66% {
-    transform: translate(34px, -34px);
-  }
-  80% {
-    transform: translate(-5px, -5px);
+    transform: translate(34px, -25px);
   }
 }
 .banner img {
@@ -220,6 +412,7 @@
 
 #titreh3 {
   width: 70%;
+  margin-left: -200px;
 }
 
 .Animetitre,
@@ -276,8 +469,7 @@
   filter: blur(10px);
   position: absolute;
   top: 0;
-  right: 0; /* Position de départ des nuages */
+  right: 150px; /* Position de départ des nuages */
   height: auto;
-  /* Vous pouvez ajouter une transition si vous voulez un effet de déplacement doux avec JavaScript */
   transition: transform 0.5s ease-out;
 }/*# sourceMappingURL=style.css.map */

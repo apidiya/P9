@@ -42,3 +42,5 @@ function enqueue_swiper_assets() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
 
+// Gestion du menu Burger
+wp_enqueue_script('Burger-script', get_stylesheet_directory_uri() . '/assets/js/menu_burger.js', array('jquery'), '1.0.0', true);
