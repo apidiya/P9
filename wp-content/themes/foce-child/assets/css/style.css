@@ -86,7 +86,7 @@
 .liste li a {
   text-decoration: none !important;
   list-style-type: none !important;
-  font-size: 45px;
+  font-size: 3vw;
   font-weight: bold;
   line-height: 104px;
 }
@@ -102,7 +102,6 @@
 .menuParagraphe {
   margin-left: 80px;
   text-align: center;
-  padding-top: 100px !important;
 }
 
 #catMenuBleu,
@@ -212,24 +211,9 @@
   z-index: -1;
 }
 
-@media (min-width: 800px) and (max-width: 900px) {
+@media (max-width: 800px) {
   .videoBanner {
-    width: 120% !important;
-  }
-}
-@media (max-width: 700px) {
-  .banner .videoBanner {
     display: none;
-  }
-  .banner .parallaxe {
-    left: 0px;
-  }
-  .banner .logoBanner {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    width: 80% !important;
-    z-index: -1;
   }
 }
 /* section nomination */
@@ -373,6 +357,14 @@
     transform: translate(34px, -25px);
   }
 }
+@media (max-width: 800px) {
+  #studio h2 {
+    font-size: 2rem;
+  }
+  #story h2 {
+    font-size: 2rem;
+  }
+}
 .banner img {
   width: 100%;
   margin-top: 0;
@@ -415,6 +407,16 @@
   margin-left: -200px;
 }
 
+@media (max-width: 800px) {
+  .swiper-slide img {
+    max-width: 140px;
+  }
+  #titreh3 {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+}
 .Animetitre,
 .Animetitre2 {
   opacity: 0;

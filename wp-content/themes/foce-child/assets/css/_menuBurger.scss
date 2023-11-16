@@ -100,7 +100,7 @@ $background-color: black;
 	    li a {
 	        text-decoration: none !important;
 	        list-style-type: none !important;
-	        font-size: 45px;
+	        font-size: 3vw;
 	        font-weight: bold;
 	        line-height: 104px;
 
@@ -119,12 +119,11 @@ $background-color: black;
 .menuParagraphe {
   margin-left: 80px;
   text-align: center;
-
-  padding-top: 100px !important;
+  // padding-top: 10px !important;
 }
 
 // Images dans le menu-Burger
-// Images du Menu deplier en mode full //
+// Images du Menu deplié en mode fullscreen //
 
 	#catMenuBleu,
 	#catMenuBlack,
