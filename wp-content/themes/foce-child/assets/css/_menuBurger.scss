@@ -119,7 +119,6 @@ $background-color: black;
 .menuParagraphe {
   margin-left: 80px;
   text-align: center;
-  // padding-top: 10px !important;
 }
 
 // Images dans le menu-Burger
@@ -155,7 +154,7 @@ $background-color: black;
   }
 
   #catMenuOrange {
-    bottom: 240px;
+    top: 700px;
     left: 80px;
     width: 93px;
     height: 84px;
@@ -172,7 +171,7 @@ $background-color: black;
   }
 
   #fleurMenuHibiscus{
-    bottom: -120px;
+    top: 640px;
     right: -240px;
     width: 30%;
   }
@@ -184,7 +183,7 @@ $background-color: black;
   }
 
   #fleurMenuFlower {
-    bottom: 480px;
+    top: 480px;
     left: 230px;
     width: 80px;
     height: 80px;
@@ -198,14 +197,16 @@ $background-color: black;
   }
 
 // media querie images
-@media (max-width: 1100px) {
-  #catMenuBlack, #fleurMenuFlower, #fleurMenuHibiscus, #fleurMenuSunFlower {
+@media (max-width: 700px) {
+  #catMenuBleu,
+	#catMenuBlack,
+	#catMenuOrange,
+	#fleurMenuSunFlower,
+	#fleurMenuOrchid,
+	#fleurMenuHibiscus,
+	#fleurMenuRandom,
+	#fleurMenuFlower  {
     display: none;
   }
-}
 
-@media (max-width: 850px) {
-  #catMenuBleu, #catMenuOrange, #fleurMenuOrchid, #fleurMenuRandom {
-    display: none;
-  }
-}
+//  je veux que le menu burger soit au dessus de l image de fond lorsque je suis en mode maxi 700px

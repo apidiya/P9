@@ -134,7 +134,7 @@
 }
 
 #catMenuOrange {
-  bottom: 240px;
+  top: 700px;
   left: 80px;
   width: 93px;
   height: 84px;
@@ -151,7 +151,7 @@
 }
 
 #fleurMenuHibiscus {
-  bottom: -120px;
+  top: 640px;
   right: -240px;
   width: 30%;
 }
@@ -163,7 +163,7 @@
 }
 
 #fleurMenuFlower {
-  bottom: 480px;
+  top: 480px;
   left: 230px;
   width: 80px;
   height: 80px;
@@ -175,14 +175,40 @@
   animation: flotte 8s infinite alternate;
 }
 
-@media (max-width: 1100px) {
-  #catMenuBlack, #fleurMenuFlower, #fleurMenuHibiscus, #fleurMenuSunFlower {
+@media (max-width: 700px) {
+  #catMenuBleu,
+  #catMenuBlack,
+  #catMenuOrange,
+  #fleurMenuSunFlower,
+  #fleurMenuOrchid,
+  #fleurMenuHibiscus,
+  #fleurMenuRandom,
+  #fleurMenuFlower {
     display: none;
   }
-}
-@media (max-width: 850px) {
-  #catMenuBleu, #catMenuOrange, #fleurMenuOrchid, #fleurMenuRandom {
-    display: none;
+  .MenuFull {
+    z-index: 1;
+  }
+  .liste ul {
+    height: 100%;
+  }
+  .menuParagraphe {
+    margin-left: 0px;
+  }
+  .logoMenu {
+    width: 100px;
+  }
+  .boutonMenu {
+    margin-right: 0px;
+  }
+  .main-navigation a {
+    margin-left: 0px;
+  }
+  .menu-items__container {
+    row-gap: 20px;
+  }
+  .menu-items__container {
+    row-gap: 20px;
   }
 }
 .banner img {
@@ -211,7 +237,7 @@
   z-index: -1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .videoBanner {
     display: none;
   }
@@ -267,6 +293,21 @@
   top: -70px;
 }
 
+@media screen and (max-width: 768px) {
+  .nomination_text {
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  .nomination_text_container {
+    margin-left: 0px;
+  }
+  .nominationOscar {
+    width: 30%;
+  }
+}
 @keyframes rotateFlower {
   from {
     transform: rotate(0deg);
@@ -407,7 +448,7 @@
   margin-left: -200px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .swiper-slide img {
     max-width: 140px;
   }
@@ -471,7 +512,7 @@
   filter: blur(10px);
   position: absolute;
   top: 0;
-  right: 150px; /* Position de départ des nuages */
+  right: 0px; /* Position de départ des nuages */
   height: auto;
   transition: transform 0.5s ease-out;
 }/*# sourceMappingURL=style.css.map */

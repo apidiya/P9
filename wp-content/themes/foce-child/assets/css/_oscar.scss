@@ -50,3 +50,23 @@
   right: -70px;
   top: -70px;
 }
+
+// media queries
+
+@media screen and (max-width:768px) {
+  .nomination_text {
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+
+  .nomination_text_container {
+    margin-left: 0px;
+  }
+
+  .nominationOscar {
+    width: 30%;
+  }
+}

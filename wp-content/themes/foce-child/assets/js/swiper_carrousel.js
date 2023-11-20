@@ -9,12 +9,11 @@ const swiper = new Swiper(".swiper", {
     direction:'horizontal',
 	loop: true,
 
-		coverflowEffect: {
-		    rotate: 55,
-		    stretch: 0,
-		    depth: 100,
-		    modifier: 1,
-		    slideShadows: false,
-		},
-		
+coverflowEffect: {
+	rotate: 55,
+	stretch: 0,
+	depth: 100,
+	modifier: 1,
+	slideShadows: false,
+	},		
 });

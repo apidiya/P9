@@ -28,12 +28,9 @@
 }
 
 // media queries
-@media (max-width: 800px) {
-    .banner {
-        .logoBanner {
-            width: 100%;
-            top: 50px;
-            margin-left: 0px;
-        }
+@media (max-width: 700px) {
+    .videoBanner {
+        display: none;
     }
+    
 }
