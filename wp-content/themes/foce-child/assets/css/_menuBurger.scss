@@ -196,17 +196,16 @@ $background-color: black;
 	animation: flotte 8s infinite alternate;
   }
 
-// media querie images
-@media (max-width: 700px) {
-  #catMenuBleu,
-	#catMenuBlack,
-	#catMenuOrange,
-	#fleurMenuSunFlower,
-	#fleurMenuOrchid,
-	#fleurMenuHibiscus,
-	#fleurMenuRandom,
-	#fleurMenuFlower  {
-    display: none;
-  }
-
-//  je veux que le menu burger soit au dessus de l image de fond lorsque je suis en mode maxi 700px
+// // media querie images
+// @media (max-width: 700px) {
+//   #catMenuBleu,
+// 	#catMenuBlack,
+// 	#catMenuOrange,
+// 	#fleurMenuSunFlower,
+// 	#fleurMenuOrchid,
+// 	#fleurMenuHibiscus,
+// 	#fleurMenuRandom,
+// 	#fleurMenuFlower  {
+//     display: none;
+//   }
+// }
