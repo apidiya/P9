@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* CSS pour le menu burger */
+.MenuFull {
+  background-color: #FFF5E9;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+}
+.MenuFull.nav_open {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutonMenu {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+.boutonMenu span {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.boutonMenu span::before, .boutonMenu span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.boutonMenu span::after {
+  transform: translateY(10px);
+}
+.boutonMenu span::before {
+  transform: translateY(-10px);
+}
+.boutonMenu.active span {
+  background-color: transparent;
+}
+.boutonMenu.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.boutonMenu.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.menu-items {
+  display: none;
+  background-color: #FFF5E9;
+}
+.menu-items__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 70px;
+}
+
+.liste ul {
+  text-align: center;
+  height: 57%;
+}
+.liste li {
+  text-align: center;
+  list-style-type: none;
+}
+.liste li a {
+  text-decoration: none !important;
+  list-style-type: none !important;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 104px;
+}
+.liste li a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00);
+  -webkit-filter: drop;
+}
+.liste img {
+  margin: auto;
+  display: flex;
+}
+
+.menuParagraphe {
+  margin-left: 80px;
+  text-align: center;
+}
+
+#catMenuBleu,
+#catMenuBlack,
+#catMenuOrange,
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuHibiscus,
+#fleurMenuRandom,
+#fleurMenuFlower {
+  position: absolute;
+}
+
+.logoMenu {
+  width: 200px;
+}
+
+#catMenuBleu {
+  top: 260px;
+  left: 280px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuBlack {
+  top: 480px;
+  right: 210px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuOrange {
+  top: 700px;
+  left: 80px;
+  width: 93px;
+  height: 84px;
+}
+
+#fleurMenuSunFlower {
+  top: 215px;
+  right: 210px;
+}
+
+#fleurMenuOrchid {
+  top: 117px;
+  left: -54px;
+}
+
+#fleurMenuHibiscus {
+  top: 640px;
+  right: -240px;
+  width: 30%;
+}
+
+#fleurMenuRandom {
+  top: 400px;
+  right: -80px;
+  width: 5%;
+}
+
+#fleurMenuFlower {
+  top: 480px;
+  left: 230px;
+  width: 80px;
+  height: 80px;
+}
+
+#catMenuBlack,
+#catMenuOrange,
+#catMenuBleu {
+  animation: flotte 8s infinite alternate;
+}
+
+@media (max-width: 700px) {
+  #catMenuOrange {
+    left: 38px;
+  }
+  #catMenuBleu {
+    display: none;
+  }
+  #catMenuBlack {
+    top: 440px;
+    right: 10%;
+  }
+  #fleurMenuFlower {
+    left: 5%;
+  }
+  #fleurMenuSunFlower {
+    display: none;
+  }
+  ul, ol {
+    margin: 0 0 1.5em -4em;
+  }
+  .menuParagraphe {
+    margin-left: -10px;
+  }
+}
+.banner img {
+  margin-top: unset;
+}
+
+.banner {
+  background-image: none;
+}
+.banner .backgroundBanner {
+  position: absolute;
+  width: 100% !important;
+  z-index: -2;
+  margin-top: 0px !important;
+}
+.banner .logoBanner {
+  width: 75%;
+  z-index: 1;
+  position: relative;
+  top: 120px;
+  margin-left: 120px;
+}
+.banner .videoBanner {
+  position: absolute;
+  width: 100% !important;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+  .videoBanner {
+    display: none;
+  }
+  .backgroundBanner img {
+    margin-bottom: 430px;
+  }
+  .backgroundBanner {
+    margin-bottom: 430px;
+    width: 100%; /* Pleine largeur */
+    height: auto; /* Maintient le ratio d'aspect */
+  }
+  .boutonMenu {
+    position: absolute; /* Ajustez ceci selon vos besoins */
+    right: -100px; /* Position exemple, ajustez selon vos besoins */
+    z-index: 10; /* Assure qu'elle est au-dessus de l'image de la bannière */
+  }
+  #story {
+    margin-top: -500px;
+  }
+}
+/* section nomination */
+.nomination_container {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomination_text {
+  font-family: Quicksand;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.84px;
+  line-height: 1;
+  height: 280px;
+  width: 723px;
+  color: #FFF5E9;
+  margin-left: 70px;
+  padding-top: 20px;
+}
+
+.nomination_text_container {
+  background-image: url("../../assets/images/orange_oscar_bg.png");
+  background-repeat: no-repeat;
+  margin-top: 6px;
+  margin-left: 50px;
+}
+
+.nominationOscar {
+  width: 25%;
+  padding-bottom: 100px;
+}
+
+#oscar::before, #oscar::after {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+#oscar::before {
+  background-image: url("../../assets/images/Sunflower.png");
+}
+
+#oscar::after {
+  background-image: url("../../assets/images/orchid.png");
+  right: -70px;
+  top: -70px;
+}
+
+@media (max-width: 700px) {
+  .nomination_text {
+    font-size: 4vw;
+    width: 548px;
+    height: 212px;
+    margin-left: -177px;
+    padding-top: 24px;
+    padding-left: 227px;
+  }
+  .nomination_text_container {
+    margin-left: 0;
+    background-size: 100%;
+    order: 1;
+    margin-bottom: -120px;
+  }
+  .nomination_container {
+    padding-top: 134px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nominationOscar {
+    order: 2;
+    width: 30%;
+    padding-bottom: 0;
+  }
+}
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.story__article::after,
+.story h2::after {
+  animation: rotateFlower 15s linear infinite;
+}
+
+.story h2::after {
+  transform-origin: 77px 77px;
+}
+
+#studio h2::before, #studio h2::after {
+  animation: rotateFlower 15s linear infinite;
+}
+#studio h2::before {
+  transform-origin: 101.5px 99.5px;
+}
+#studio h2::after {
+  transform-origin: 54px 53px;
+}
+
+#oscar::before, #oscar::after {
+  animation: rotateFlower 15s linear infinite;
+}
+
+.site-footer ul::after,
+.site-footer::before,
+.site-footer::after {
+  animation: rotateFlower 15s linear infinite;
+}
+
+.site-footer::after,
+.site-footer::before {
+  display: none;
+}
+
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuRandom,
+#fleurMenuFlower,
+#fleurMenuHibiscus {
+  animation: rotateFlower 15s linear infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-video {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade-in-video.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flottement {
+  animation: flotte 8s infinite both;
+}
+
+@keyframes flotte {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(20px, 33px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  66% {
+    transform: translate(34px, -25px);
+  }
+}
+.banner img {
+  width: 100%;
+  margin-top: 0;
+}
+
+.banner .parralax {
+  width: 50%;
+  margin-top: -10%;
+}
+
+.swiper {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 380px;
+}
+
+#characters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#titreh3 {
+  width: 70%;
+  margin-left: -200px;
+}
+
+@media (max-width: 700px) {
+  .swiper-slide img {
+    max-width: 140px;
+  }
+  #titreh3 {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+}
+.Animetitre,
+.Animetitre2 {
+  opacity: 0;
+}
+
+.animateTitle,
+.animateTitle2 {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+}
+
+.animateTitle {
+  animation: KframeAnimateTitre1 1s ease-in-out;
+}
+
+.animateTitle2 {
+  animation: KframeAnimateTitre2 1s ease-in-out;
+}
+
+@keyframes KframeAnimateTitre1 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes KframeAnimateTitre2 {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.story #place {
+  position: relative;
+  background-image: url("../images/place_bg_sans-nuage-bleu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; /* Empêche les nuages de dépasser lorsqu'ils se déplacent */
+}
+
+#NuagesBleu {
+  max-height: 300px;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0px; /* Position de départ des nuages */
+  height: auto;
+  transition: transform 0.5s ease-out;
+}/*# sourceMappingURL=style.css.map */

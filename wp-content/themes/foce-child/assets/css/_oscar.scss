@@ -8,15 +8,17 @@
 
 .nomination_text {
   font-family:  Quicksand;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: -0.84px;
   line-height: 1;
   height: 280px;
-  width: 723px;
+  max-width: 723px;
+  width: 100%;
   color: #FFF5E9;
   margin-left: 70px;
   padding-top: 20px;
+  padding-right: 100px;
 }
 
 .nomination_text_container {
@@ -24,6 +26,7 @@
   background-repeat: no-repeat;
   margin-top: 6px; 
   margin-left: 50px; 
+  background-size: 100% ;
 }
 
 
@@ -53,15 +56,29 @@
 
 // media queries
 
+@media (min-width: 700px) and (max-width: 1000px) { 
+  .nomination_text {
+    font-size: 24px;
+    padding-right: 90px;
+  }
+
+  #oscar::before, #oscar::after {
+    width: 120px;
+    height: 120px;
+  }
+  #studio h2::before {
+    left: -2em;
+  }
+
+}
+
 @media (max-width: 700px) {
   .nomination_text {
     font-size: 4vw;
-    width: 548px;
-    height: 212px;
-    margin-left: -177px;
-    padding-top: 24px;
-    padding-left: 227px;
-  }
+    width: 100%;
+    max-width: 545px;
+    height: 111px;
+}
 
   .nomination_text_container {
     margin-left: 0;
@@ -69,6 +86,15 @@
     order: 1;
     margin-bottom: -120px;
   }
+
+  .nomination_text_container {
+    margin-left: 0;
+    background-size: 100%;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+}
 
   .nomination_container {
     padding-top: 134px;
@@ -81,4 +107,14 @@
     width: 30%;
     padding-bottom: 0;
   }
+
+  
+  #oscar::after {
+    right: -30px;
+}
+
+#oscar::before, #oscar::after {
+    width: 100px;
+    height: 100px;
+} 
 }

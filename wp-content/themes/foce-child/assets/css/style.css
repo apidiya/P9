@@ -1,7 +1,15 @@
 @charset "UTF-8";
 /* CSS pour le menu burger */
-.main-navigation a {
-  margin-left: 250px;
+.main-navigation {
+  height: 80px;
+}
+
+.main-navigation ul {
+  display: flex;
+}
+
+.main-navigation ul .site-title {
+  display: flex;
 }
 
 .MenuFull {
@@ -173,19 +181,52 @@
   animation: flotte 8s infinite alternate;
 }
 
+@media (min-width: 700px) and (max-width: 1000px) {
+  #catMenuBleu {
+    left: 10%;
+  }
+  #fleurMenuSunFlower {
+    right: 5%;
+  }
+  #catMenuBlack {
+    right: 10%;
+  }
+  #fleurMenuFlower {
+    left: 5%;
+  }
+}
 @media (max-width: 700px) {
   #catMenuOrange {
-    left: 38px;
+    left: 0;
+  }
+  .main-navigation a {
+    font-size: 14px;
+  }
+  .main-navigation ul {
+    justify-content: flex-start;
+  }
+  .banner {
+    min-height: 100vh;
+  }
+  .banner .backgroundBanner {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
   }
   #catMenuBleu {
     display: none;
   }
   #catMenuBlack {
     top: 440px;
-    right: 10%;
+    right: 0;
   }
   #fleurMenuFlower {
     left: 5%;
+  }
+  .liste li a {
+    font-size: 4.5vw;
   }
   #fleurMenuSunFlower {
     display: none;
@@ -219,7 +260,6 @@
 }
 .banner .videoBanner {
   position: absolute;
-  width: 100% !important;
   z-index: -1;
 }
 
@@ -240,8 +280,18 @@
     right: -100px; /* Position exemple, ajustez selon vos besoins */
     z-index: 10; /* Assure qu'elle est au-dessus de l'image de la bannière */
   }
-  #story {
-    margin-top: -500px;
+  .story #place > div p {
+    padding-left: 0.5em;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #oscar::after {
+    right: -30px;
+  }
+  #oscar::before, #oscar::after {
+    width: 100px;
+    height: 100px;
   }
 }
 /* section nomination */
@@ -254,15 +304,17 @@
 
 .nomination_text {
   font-family: Quicksand;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: -0.84px;
   line-height: 1;
   height: 280px;
-  width: 723px;
+  max-width: 723px;
+  width: 100%;
   color: #FFF5E9;
   margin-left: 70px;
   padding-top: 20px;
+  padding-right: 100px;
 }
 
 .nomination_text_container {
@@ -270,6 +322,7 @@
   background-repeat: no-repeat;
   margin-top: 6px;
   margin-left: 50px;
+  background-size: 100%;
 }
 
 .nominationOscar {
@@ -295,20 +348,39 @@
   top: -70px;
 }
 
+@media (min-width: 700px) and (max-width: 1000px) {
+  .nomination_text {
+    font-size: 24px;
+    padding-right: 90px;
+  }
+  #oscar::before, #oscar::after {
+    width: 120px;
+    height: 120px;
+  }
+  #studio h2::before {
+    left: -2em;
+  }
+}
 @media (max-width: 700px) {
   .nomination_text {
     font-size: 4vw;
-    width: 548px;
-    height: 212px;
-    margin-left: -177px;
-    padding-top: 24px;
-    padding-left: 227px;
+    width: 100%;
+    max-width: 545px;
+    height: 111px;
   }
   .nomination_text_container {
     margin-left: 0;
     background-size: 100%;
     order: 1;
     margin-bottom: -120px;
+  }
+  .nomination_text_container {
+    margin-left: 0;
+    background-size: 100%;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
   }
   .nomination_container {
     padding-top: 134px;
@@ -319,6 +391,13 @@
     order: 2;
     width: 30%;
     padding-bottom: 0;
+  }
+  #oscar::after {
+    right: -30px;
+  }
+  #oscar::before, #oscar::after {
+    width: 100px;
+    height: 100px;
   }
 }
 @keyframes rotateFlower {
@@ -421,6 +500,12 @@
   margin-top: -10%;
 }
 
+@media screen and (max-width: 700px) {
+  .banner .parralax {
+    width: 70%;
+    margin-top: -50%;
+  }
+}
 .swiper {
   padding-left: 100px;
   padding-top: 50px;
@@ -453,6 +538,11 @@
   margin-left: -200px;
 }
 
+@media (min-width: 700px) and (max-width: 1000px) {
+  #titreh3 {
+    margin-left: 0;
+  }
+}
 @media (max-width: 700px) {
   .swiper-slide img {
     max-width: 140px;

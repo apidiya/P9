@@ -1,0 +1,69 @@
+$vitesse:15s;
+$hauteur:200;
+
+@keyframes rotateFlower {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// section story
+.story__article::after,
+.story h2::after {
+    animation: rotateFlower $vitesse linear infinite; 
+}
+
+.story h2::after {
+    transform-origin: 77px 77px;
+}
+// Section Studio
+#studio {
+
+	h2 {
+		&::before, &::after {
+			animation: rotateFlower $vitesse linear infinite;
+		}
+		
+		&::before {
+			transform-origin: 101.5px 99.5px;
+		}
+		
+		&::after {
+			transform-origin: 54px 53px;
+		}
+	}
+}
+
+// Section Oscar
+#oscar {
+	&::before, &::after {
+		animation: rotateFlower $vitesse linear infinite;
+	}
+}
+
+// Section Footer 
+.site-footer ul::after,
+.site-footer::before,
+.site-footer::after {
+	animation: rotateFlower $vitesse linear infinite;
+}
+
+// Cacher les 2 fleurs colophon du footer
+.site-footer::after,
+.site-footer::before {
+	display: none;
+}
+
+// Rotation des fleurs du menu
+
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuRandom,
+#fleurMenuFlower,
+#fleurMenuHibiscus {
+	animation: rotateFlower $vitesse linear infinite ;
+  }
+

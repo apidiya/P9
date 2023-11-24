@@ -8,3 +8,10 @@
     width: 50%;
     margin-top: -10%;
 }
+
+@media screen and (max-width:700px) {
+    .banner .parralax {
+        width: 70%;
+        margin-top: -50%;
+    }
+}

@@ -1,0 +1,43 @@
+$vitesseTitre: 1s;
+
+.Animetitre,
+.Animetitre2 {
+	opacity: 0;
+	}
+
+.animateTitle,
+.animateTitle2 {
+	display:inline-block;
+	position: relative;
+	opacity: 1;
+	}
+
+.animateTitle {
+	animation: KframeAnimateTitre1 $vitesseTitre ease-in-out;
+	}
+
+.animateTitle2 {
+	animation: KframeAnimateTitre2 $vitesseTitre ease-in-out;
+	}
+
+// Keyframes animation des titres
+@keyframes KframeAnimateTitre1 {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes KframeAnimateTitre2 {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

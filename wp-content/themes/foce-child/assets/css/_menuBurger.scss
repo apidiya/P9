@@ -2,7 +2,19 @@
 $background-color: black;
 
 .main-navigation a {
-  margin-left: 250px;
+//   margin-left: 250px;
+} 
+
+.main-navigation {
+	height: 80px;
+} 
+
+.main-navigation ul {
+    display: flex;
+}
+
+.main-navigation ul .site-title {
+	display: flex;
 }
 
 .MenuFull {
@@ -192,9 +204,46 @@ $background-color: black;
   }
 
 // media querie images
+
+@media (min-width: 700px) and (max-width: 1000px) {
+	#catMenuBleu {
+		left: 10%;
+	}
+	#fleurMenuSunFlower {
+		right: 5%;
+	}
+	
+	#catMenuBlack {
+		right: 10%;
+	}
+	#fleurMenuFlower {
+		left: 5%
+	}
+}
+
 @media (max-width: 700px) {
 #catMenuOrange {
-    left: 38px;
+    left: 0;
+}
+
+.main-navigation a {
+	font-size: 14px;
+}
+
+.main-navigation ul {
+	justify-content: flex-start;
+}
+
+.banner {
+	min-height: 100vh;
+}
+
+.banner .backgroundBanner {
+    position: absolute;
+    width: 100% !important;
+	height: 100%;
+	top: 0;
+	object-fit: cover;
 }
 
 #catMenuBleu {
@@ -203,10 +252,14 @@ $background-color: black;
 
 #catMenuBlack {
     top: 440px;
-    right: 10%;
+    right: 0;
 }
 #fleurMenuFlower {
     left: 5%
+}
+
+.liste li a {
+	font-size: 4.5vw;
 }
 
 #fleurMenuSunFlower {

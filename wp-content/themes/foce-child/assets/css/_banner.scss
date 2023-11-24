@@ -22,7 +22,7 @@
     
     .videoBanner {
         position: absolute;
-        width: 100% !important;
+        // width: 100% !important;
         z-index: -1;
     }
 }
@@ -51,7 +51,24 @@
     }
 
     #story {
-        margin-top: -500px;
+        // margin-top: -500px;
     }
+
+    .story #place > div p {
+        padding-left: 0.5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #oscar::after {
+        right: -30px;
+    }
+
+    #oscar::before, #oscar::after {
+        width: 100px;
+        height: 100px;
+    } 
 }
 
