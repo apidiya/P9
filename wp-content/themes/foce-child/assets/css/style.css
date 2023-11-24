@@ -76,8 +76,6 @@
 .liste ul {
   text-align: center;
   height: 57%;
-  margin: 0;
-  padding: 0;
 }
 .liste li {
   text-align: center;
@@ -175,6 +173,30 @@
   animation: flotte 8s infinite alternate;
 }
 
+@media (max-width: 700px) {
+  #catMenuOrange {
+    left: 38px;
+  }
+  #catMenuBleu {
+    display: none;
+  }
+  #catMenuBlack {
+    top: 440px;
+    right: 10%;
+  }
+  #fleurMenuFlower {
+    left: 5%;
+  }
+  #fleurMenuSunFlower {
+    display: none;
+  }
+  ul, ol {
+    margin: 0 0 1.5em -4em;
+  }
+  .menuParagraphe {
+    margin-left: -10px;
+  }
+}
 .banner img {
   margin-top: unset;
 }
@@ -201,6 +223,27 @@
   z-index: -1;
 }
 
+@media only screen and (max-width: 700px) {
+  .videoBanner {
+    display: none;
+  }
+  .backgroundBanner img {
+    margin-bottom: 430px;
+  }
+  .backgroundBanner {
+    margin-bottom: 430px;
+    width: 100%; /* Pleine largeur */
+    height: auto; /* Maintient le ratio d'aspect */
+  }
+  .boutonMenu {
+    position: absolute; /* Ajustez ceci selon vos besoins */
+    right: -100px; /* Position exemple, ajustez selon vos besoins */
+    z-index: 10; /* Assure qu'elle est au-dessus de l'image de la bannière */
+  }
+  #story {
+    margin-top: -500px;
+  }
+}
 /* section nomination */
 .nomination_container {
   padding-top: 80px;

@@ -1,5 +1,4 @@
 /* CSS pour le menu burger */
-
 $background-color: black;
 
 .main-navigation a {
@@ -88,13 +87,11 @@ $background-color: black;
 	    ul {
 	        text-align: center;
 	        height: 57%;
-	        margin: 0;
-	        padding:0;
 	    }
 
 	    li {
 	        text-align: center;
-          list-style-type: none;
+          	list-style-type: none;
 	    }
 
 	    li a {
@@ -122,8 +119,6 @@ $background-color: black;
 }
 
 // Images dans le menu-Burger
-// Images du Menu deplié en mode fullscreen //
-
 	#catMenuBleu,
 	#catMenuBlack,
 	#catMenuOrange,
@@ -196,16 +191,32 @@ $background-color: black;
 	animation: flotte 8s infinite alternate;
   }
 
-// // media querie images
-// @media (max-width: 700px) {
-//   #catMenuBleu,
-// 	#catMenuBlack,
-// 	#catMenuOrange,
-// 	#fleurMenuSunFlower,
-// 	#fleurMenuOrchid,
-// 	#fleurMenuHibiscus,
-// 	#fleurMenuRandom,
-// 	#fleurMenuFlower  {
-//     display: none;
-//   }
-// }
+// media querie images
+@media (max-width: 700px) {
+#catMenuOrange {
+    left: 38px;
+}
+
+#catMenuBleu {
+    display: none;
+}
+
+#catMenuBlack {
+    top: 440px;
+    right: 10%;
+}
+#fleurMenuFlower {
+    left: 5%
+}
+
+#fleurMenuSunFlower {
+	display: none;
+}
+ul, ol {
+    margin: 0 0 1.5em -4em;
+}
+
+.menuParagraphe {
+	margin-left: -10px;
+}
+}

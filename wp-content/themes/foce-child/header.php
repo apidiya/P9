@@ -26,12 +26,12 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'foce' ); ?></a>
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-                    <div class="boutonMenu">
-						<span> </span>
-	         </div>
-	         <ul>
-		       	<li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-	         </ul>
+            <div class="boutonMenu">
+				<span> </span>
+	        </div>
+	        <ul>
+		    	<li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+	        </ul>
 	    </nav><!-- #site-navigation -->
         <section class="menu-items MenuFull">
         	<div class="menu-items__container">

@@ -27,11 +27,31 @@
     }
 }
 
-// // media queries
-// @media (max-width: 700px)
 
-// {
-//     .banner {
-//         min-height: 0px;
-//     }    
-// }
+
+@media only screen and (max-width: 700px) {
+    .videoBanner {
+        display: none;
+    }
+    
+    .backgroundBanner img {
+        margin-bottom: 430px;
+    }
+    
+    .backgroundBanner {
+        margin-bottom: 430px;
+        width: 100%; /* Pleine largeur */
+        height: auto; /* Maintient le ratio d'aspect */
+    }
+
+    .boutonMenu {
+        position: absolute; /* Ajustez ceci selon vos besoins */
+        right: -100px; /* Position exemple, ajustez selon vos besoins */
+        z-index: 10; /* Assure qu'elle est au-dessus de l'image de la bannière */
+    }
+
+    #story {
+        margin-top: -500px;
+    }
+}
+
