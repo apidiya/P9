@@ -213,7 +213,8 @@
     width: 100% !important;
     height: 100%;
     top: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #catMenuBleu {
     display: none;
