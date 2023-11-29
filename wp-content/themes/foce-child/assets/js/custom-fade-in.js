@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkVisibility); // Déclencher à chaque défilement
 });
 
-// parrralaxe
+// parallaxe
 window.addEventListener('scroll', function() {
     const parallaxImage = document.querySelector('.parralax');
     const scrollPosition = window.scrollY;
