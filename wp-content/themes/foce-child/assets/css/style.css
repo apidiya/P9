@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS pour le menu burger */
 .main-navigation {
   height: 80px;
 }
@@ -273,13 +272,13 @@
   }
   .backgroundBanner {
     margin-bottom: 430px;
-    width: 100%; /* Pleine largeur */
-    height: auto; /* Maintient le ratio d'aspect */
+    width: 100%;
+    height: auto;
   }
   .boutonMenu {
-    position: absolute; /* Ajustez ceci selon vos besoins */
-    right: -100px; /* Position exemple, ajustez selon vos besoins */
-    z-index: 10; /* Assure qu'elle est au-dessus de l'image de la bannière */
+    position: absolute;
+    right: -100px;
+    z-index: 10;
   }
   .story #place > div p {
     padding-left: 0.5em;
