@@ -1,4 +1,5 @@
-﻿console.log("le script Swiper est lancé")
+﻿// carrousel swiper pour les personnages
+console.log("le script Swiper est lancé")
 
 // Initialisation du Swiper
 const swiper = new Swiper(".swiper", {

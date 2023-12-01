@@ -1,8 +1,6 @@
-﻿
-//console.log(" Message dans la console, pour vérifier que le JavaScript est fonctionnel ")
+﻿//console.log(" Message dans la console, pour vérifier que le JavaScript est fonctionnel ")
 console.log(" le script javascript lancé se nomme menu_burger.js et il est fonctionnel ")
 
-//gestion ouverture menu
 /*Ouverture menu*/
 
 const boutonMenu = document.querySelector('.boutonMenu');
@@ -14,7 +12,7 @@ boutonMenu.classList.toggle('active');
 });
 
     
-/*Fermeture menu sur click lien*/
+/*Fermeture menu sur click d'un lien*/
 
 const menuLinks = document.querySelectorAll('.MenuFull ul li a');
 

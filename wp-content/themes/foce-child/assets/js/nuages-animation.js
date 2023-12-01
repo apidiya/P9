@@ -1,3 +1,4 @@
+// animation des nuages sur la page d'accueil au scroll
 console.log(" le script nuages-animations.js est lancé")
 
 document.addEventListener("DOMContentLoaded", function() {

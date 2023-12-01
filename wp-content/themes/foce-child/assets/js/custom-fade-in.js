@@ -1,3 +1,5 @@
+// script pour faire apparaitre les éléments au scroll ave cun effet fade-in
+
 document.addEventListener('DOMContentLoaded', function() {
     function checkVisibility() {
         const elements = document.querySelectorAll('.fade-in');

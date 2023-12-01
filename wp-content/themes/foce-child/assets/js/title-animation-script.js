@@ -1,7 +1,10 @@
+// animation des titres sur la page d'accueil au scroll en 2 temps
+
 console.log(" le script title-animation-script.js est lancé ")
 
+//premiere partie du titre
    const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
+    // parcourt chaque élément observé
     entries.forEach(entry => {
       // si l'élément est visible
       if (entry.isIntersecting) {
@@ -21,7 +24,7 @@ console.log(" le script title-animation-script.js est lancé ")
   });
 
   
-    //deuxieme partie du titre
+//deuxieme partie du titre
   const observer2 = new IntersectionObserver(entries => {
  
     entries.forEach(entry => {
