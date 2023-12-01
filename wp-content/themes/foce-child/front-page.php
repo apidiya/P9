@@ -4,6 +4,7 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
+        
         <section class="banner section fade-in fade-in-video ">
             <!-- video banner -->
             <video class="videoBanner" autoplay muted loop  poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
@@ -15,6 +16,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>  " class="flottement" alt="logo Fleurs d'oranger & chats errants">
             </div>  
         </section>
+
         <section id="story" class="story section fade-in">
         <h2><span class="Animetitre">L'</span><span class="Animetitre2">histoire</span></h2>
             <article id="" class="story__article">
@@ -32,10 +34,8 @@ get_header();
                 <h3><span class="Animetitre">Le</span><span class="Animetitre2">&nbsp;lieu</span></h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
-
             </article>
         </section>
-
 
         <section id="studio" class="section fade-in">
             <h2><span class="Animetitre">Studio</span><span class="Animetitre2">&nbsp;Koukaki</span></h2>
