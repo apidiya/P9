@@ -3,7 +3,6 @@
 console.log(" le script javascript lancé se nomme menu_burger.js et il est fonctionnel ")
 
 //gestion ouverture menu
-
 /*Ouverture menu*/
 
 const boutonMenu = document.querySelector('.boutonMenu');

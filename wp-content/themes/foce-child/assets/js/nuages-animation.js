@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
         // Appliquer la translation à #NuagesBleu
         nuagesBleu.style.transform = "translateX(-" + translation + "px)";
-      } else {
+      } 
+      else {
         // Si le titre n'est pas visible, revenir à la position initiale
         nuagesBleu.style.transform = "translateX(0)";
       }

@@ -1,6 +1,6 @@
 // CSS pour la rotation des fleurs
 
-// Variable de la viteresse de rotation des fleurs
+// Variable de la vitesse de rotation des fleurs
 $vitesse:15s; 
 
 @keyframes rotateFlower {
@@ -21,9 +21,9 @@ $vitesse:15s;
 .story h2::after {
     transform-origin: 77px 77px;
 }
+
 // Section Studio
 #studio {
-
 	h2 {
 		&::before, &::after {
 			animation: rotateFlower $vitesse linear infinite;
@@ -60,7 +60,6 @@ $vitesse:15s;
 }
 
 // Rotation des fleurs du menu
-
 #fleurMenuSunFlower,
 #fleurMenuOrchid,
 #fleurMenuRandom,
