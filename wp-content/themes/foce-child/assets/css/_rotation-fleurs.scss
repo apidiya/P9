@@ -53,7 +53,7 @@ $vitesse:15s;
 	animation: rotateFlower $vitesse linear infinite;
 }
 
-// Cacher les 2 fleurs colophon du footer
+// Cacher les 2 fleurs colophon du footer pour adapter oscar.php
 .site-footer::after,
 .site-footer::before {
 	display: none;
